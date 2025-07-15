@@ -1,35 +1,35 @@
 const defaultMaterias = {
   'Nivelación': [
-    { nombre: "Introducción a la Problemática del Diseño y su Expresión", estado: "Pendiente", nota: null, periodo: "NIVELACION", correlativas: [] },
-    { nombre: "Estrategias de Aprendizaje", estado: "Pendiente", nota: null, periodo: "NIVELACION", correlativas: [] }
+    { nombre: "Introducción a la Problemática del Diseño y su Expresión", estado: "Aprobada", nota: 7, periodo: "NIVELACION", correlativas: [] },
+    { nombre: "Estrategias de Aprendizaje", estado: "Aprobada", nota: 7, periodo: "NIVELACION", correlativas: [] }
   ],
   '1° Año': [
-    { nombre: "Introducción a la Tecnología", estado: "Pendiente", nota: null, periodo: "ANUAL", correlativas: [] },
-    { nombre: "Introducción a la Historia de la Arquitectura y el Urbanismo", estado: "Pendiente", nota: null, periodo: "ANUAL", correlativas: [] },
-    { nombre: "Sistemas Gráficos de Expresión", estado: "Pendiente", nota: null, periodo: "ANUAL", correlativas: [] },
-    { nombre: "Morfología I", estado: "Pendiente", nota: null, periodo: "ANUAL", correlativas: [] },
-    { nombre: "Arquitectura I", estado: "Pendiente", nota: null, periodo: "ANUAL", correlativas: [] },
-    { nombre: "Matemática I", estado: "Pendiente", nota: null, periodo: "PRIMER CUATRIMESTRE", correlativas: [] },
-    { nombre: "Física", estado: "Pendiente", nota: null, periodo: "PRIMER CUATRIMESTRE", correlativas: [] }
+    { nombre: "Introducción a la Tecnología", estado: "Aprobada", nota: 6, periodo: "ANUAL", correlativas: [] },
+    { nombre: "Introducción a la Historia de la Arquitectura y el Urbanismo", estado: "Aprobada", nota: 6, periodo: "ANUAL", correlativas: [] },
+    { nombre: "Sistemas Gráficos de Expresión", estado: "Aprobada", nota: 7, periodo: "ANUAL", correlativas: [] },
+    { nombre: "Morfología I", estado: "Aprobada", nota: 8, periodo: "ANUAL", correlativas: [] },
+    { nombre: "Arquitectura I", estado: "Aprobada", nota: 8, periodo: "ANUAL", correlativas: [] },
+    { nombre: "Matemática I", estado: "Aprobada", nota: 6, periodo: "PRIMER CUATRIMESTRE", correlativas: [] },
+    { nombre: "Física", estado: "Aprobada", nota: 6, periodo: "PRIMER CUATRIMESTRE", correlativas: [] }
   ],
   '2° Año': [
-    { nombre: "Construcciones I", estado: "Pendiente", nota: null, periodo: "ANUAL", correlativas: ["Sistemas Gráficos de Expresión", "Introducción a la Tecnología"] },
-    { nombre: "Instalaciones I", estado: "Pendiente", nota: null, periodo: "ANUAL", correlativas: ["Física", "Introducción a la Tecnología"] },
-    { nombre: "Estructuras I", estado: "Pendiente", nota: null, periodo: "ANUAL", correlativas: ["Matemática I", "Física"] },
-    { nombre: "Historia de la Arquitectura I", estado: "Pendiente", nota: null, periodo: "ANUAL", correlativas: ["Introducción a la Historia de la Arquitectura y el Urbanismo"] },
-    { nombre: "Teorías y Métodos", estado: "Pendiente", nota: null, periodo: "ANUAL", correlativas: ["Arquitectura I", "Introducción a la Historia de la Arquitectura y el Urbanismo"] },
-    { nombre: "Morfología II", estado: "Pendiente", nota: null, periodo: "ANUAL", correlativas: ["Morfología I", "Sistemas Gráficos de Expresión"] },
-    { nombre: "Arquitectura II", estado: "Pendiente", nota: null, periodo: "ANUAL", correlativas: ["Arquitectura I"] }
+    { nombre: "Construcciones I", estado: "En Curso", nota: null, periodo: "ANUAL", correlativas: ["Sistemas Gráficos de Expresión", "Introducción a la Tecnología"] },
+    { nombre: "Instalaciones I", estado: "En Curso", nota: null, periodo: "ANUAL", correlativas: ["Física", "Introducción a la Tecnología"] },
+    { nombre: "Estructuras I", estado: "En Curso", nota: null, periodo: "ANUAL", correlativas: ["Matemática I", "Física"] },
+    { nombre: "Historia de la Arquitectura I", estado: "Aprobada", nota: 5, periodo: "ANUAL", correlativas: ["Introducción a la Historia de la Arquitectura y el Urbanismo"] },
+    { nombre: "Teorías y Métodos", estado: "Aprobada", nota: 7, periodo: "ANUAL", correlativas: ["Arquitectura I", "Introducción a la Historia de la Arquitectura y el Urbanismo"] },
+    { nombre: "Morfología II", estado: "Aprobada", nota: 7, periodo: "ANUAL", correlativas: ["Morfología I", "Sistemas Gráficos de Expresión"] },
+    { nombre: "Arquitectura II", estado: "En Curso", nota: null, periodo: "ANUAL", correlativas: ["Arquitectura I"] }
   ],
   '3° Año': [
     { nombre: "Construcciones II", estado: "Pendiente", nota: null, periodo: "ANUAL", correlativas: ["Arquitectura II", "Construcciones I"] },
     { nombre: "Instalaciones II", estado: "Pendiente", nota: null, periodo: "ANUAL", correlativas: ["Instalaciones I"] },
     { nombre: "Estructuras II", estado: "Pendiente", nota: null, periodo: "ANUAL", correlativas: ["Estructuras I"] },
-    { nombre: "Historia de la Arquitectura II", estado: "Pendiente", nota: null, periodo: "ANUAL", correlativas: ["Historia de la Arquitectura I", "Teorías y Métodos"] },
+    { nombre: "Historia de la Arquitectura II", estado: "En Curso", nota: null, periodo: "ANUAL", correlativas: ["Historia de la Arquitectura I", "Teorías y Métodos"] },
     { nombre: "Morfología III", estado: "Pendiente", nota: null, periodo: "ANUAL", correlativas: ["Arquitectura II", "Morfología II"] },
     { nombre: "Arquitectura III", estado: "Pendiente", nota: null, periodo: "ANUAL", correlativas: ["Arquitectura II"] },
-    { nombre: "Matemática II", estado: "Pendiente", nota: null, periodo: "PRIMER CUATRIMESTRE", correlativas: ["Matemática I"] },
-    { nombre: "Informática", estado: "Pendiente", nota: null, periodo: "ANUAL", correlativas: [] }
+    { nombre: "Matemática II", estado: "En Curso", nota: null, periodo: "PRIMER CUATRIMESTRE", correlativas: ["Matemática I"] },
+    { nombre: "Informática", estado: "En Curso", nota: null, periodo: "ANUAL", correlativas: [] }
   ],
   '4° Año': [
     { nombre: "Construcciones III", estado: "Pendiente", nota: null, periodo: "ANUAL", correlativas: ["Construcciones II"] },
