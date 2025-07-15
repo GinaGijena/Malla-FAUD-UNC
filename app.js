@@ -216,7 +216,7 @@ function actualizarBarraProgreso() {
 
   const porcentaje = totalMaterias === 0 ? 0 : (materiasAprobadas / totalMaterias) * 100;
   const progressBar = document.getElementById('progress-bar');
-  const progressText = document.getElementById('progress-text');
+  // const progressText = document.getElementById('progress-text'); // Eliminado
   const progressBarContainer = document.getElementById('progress-bar-container');
 
   // Set the width of the inner bar (the filled part)
@@ -225,35 +225,19 @@ function actualizarBarraProgreso() {
   // Set the background color to a fixed blue
   progressBar.style.background = '#007bff'; // Un color azul estándar
 
-  // Update the percentage text content FIRST so its width can be measured accurately
-  progressText.textContent = `${Math.round(porcentaje)}%`;
-
-  // Measure textWidth *after* its content is set
-  const textWidth = progressText.offsetWidth;
-
-  // Actual rendered width of the colored bar
-  const filledWidth = progressBar.offsetWidth;
-
-  let idealLeft;
-
-  // If progress is 0%, place text near the beginning with a small offset
-  if (porcentaje === 0) {
-    idealLeft = 5;
-  } else {
-    // Calculate the left position to center the text within the *current filled width*
-    idealLeft = (filledWidth / 2) - (textWidth / 2);
-
-    // Ensure the text does not go off the left edge of the container (e.g., if bar is very short)
-    idealLeft = Math.max(5, idealLeft);
-
-    // Ensure the text stays within the right edge of the *filled portion* of the bar.
-    // This is crucial for "centrarlo en el espacio de la barra progresiva de color".
-    // We add a small padding (5px) from the right edge of the filled bar.
-    idealLeft = Math.min(idealLeft, filledWidth - textWidth - 5);
-  }
-
-  // Apply the calculated left position
-  progressText.style.left = `${idealLeft}px`;
+  // Logic for progressText has been removed
+  // progressText.textContent = `${Math.round(porcentaje)}%`;
+  // const textWidth = progressText.offsetWidth;
+  // const filledWidth = progressBar.offsetWidth;
+  // let idealLeft;
+  // if (porcentaje === 0) {
+  //   idealLeft = 5;
+  // } else {
+  //   idealLeft = (filledWidth / 2) - (textWidth / 2);
+  //   idealLeft = Math.max(5, idealLeft);
+  //   idealLeft = Math.min(idealLeft, filledWidth - textWidth - 5);
+  // }
+  // progressText.style.left = `${idealLeft}px`;
 }
 
 // Collapse functionality
