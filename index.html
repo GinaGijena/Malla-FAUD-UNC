@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malla Interactiva - FAUD UNC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Malla Interactiva - Arquitectura FAUD UNC</h1>
+
+  <div id="filters">
+    <button onclick="filtrar('Todas')">Todas</button>
+    <button onclick="filtrar('Aprobada')">Aprobadas</button>
+    <button onclick="filtrar('En Curso')">En Curso</button>
+    <button onclick="filtrar('Pendiente')">Pendientes</button>
+  </div>
+
+  <div id="malla" class="years-container"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
