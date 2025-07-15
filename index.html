@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,12 +9,23 @@
 <body>
   <h1>Malla Interactiva - Arquitectura FAUD UNC</h1>
 
-  <div id="filters">
-    <button onclick="filtrar('Todas')">Todas</button>
-    <button onclick="filtrar('Aprobada')">Aprobadas</button>
-    <button onclick="filtrar('En Curso')">En Curso</button>
-    <button onclick="filtrar('Pendiente')">Pendientes</button>
+  <div id="controls-container">
+    <div id="filters">
+      <button onclick="filtrar('Todas')">Todas</button>
+      <button onclick="filtrar('Aprobada')">Aprobadas</button>
+      <button onclick="filtrar('En Curso')">En Curso</button>
+      <button onclick="filtrar('Regularizada')">Regularizadas</button>
+      <button onclick="filtrar('Pendiente')">Pendientes</button>
+    </div>
+
+    <div id="progress-bar-container">
+      <div id="progress-bar"></div>
+      <div id="progress-text">0%</div>
+    </div>
+
+    <button id="toggle-collapse-btn" onclick="toggleCollapseAll()">Comprimir Años Completados</button>
   </div>
+
 
   <div id="malla" class="years-container"></div>
 
